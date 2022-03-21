@@ -1,3 +1,17 @@
+Simple React WebApp to Catch Pokemon from the [Pokemon API](https://pokeapi.co/). 
+
+Install Project with
+
+### `npm install`
+
+and then run it with 
+
+### `npm start`
+
+-----------------------------------------------------------------------------------------------------
+
+Automatically generated ReactJS readme for advanced settings:
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
