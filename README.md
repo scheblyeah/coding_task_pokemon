@@ -1,4 +1,4 @@
-Simple React WebApp to Catch Pokemon from the [Pokemon API](https://pokeapi.co/). 
+# Simple React WebApp to Catch Pokemon from the [Pokemon API](https://pokeapi.co/). 
 
 Install Project with
 
