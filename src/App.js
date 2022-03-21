@@ -79,8 +79,8 @@ const App = () => {
           setMasterballsleft(oldValue => oldValue-1); break;
       }
       /**propability of catching with normal pokeball: 50%
-       * superball: adding 20%
-       * hyperball: adding 50%
+       * superball: adding 20% to the random propability
+       * hyperball: adding 50% 
        * masterball: adding 100%
        *  */ 
       if(getRandomInt(0, 100) + bonus >= 50){
@@ -170,6 +170,46 @@ const App = () => {
     );
   }
 
+  function Pokeball(){
+    let classname = "";
+    if(pokeballsLeft>0){
+      classname = "pokeball";
+    }
+    return(
+      <button className={classname} onClick={() => catchPokemon(pokeballValue)}>Catch with Pokeball <br /> {`(${pokeballsLeft} balls left)`} </button>
+      )
+  }
+
+  function Superball(){
+    let classname = "";
+    if(superballsLeft>0){
+      classname = "superball";
+    }
+    return(
+      <button className={classname} onClick={() => catchPokemon(superballValue)}>Catch with Superball <br /> {`(${superballsLeft} balls left)`} </button>
+      )
+  }
+
+  function Hyperball(){
+    let classname = "";
+    if(hyperballsLeft>0){
+      classname = "hyperball";
+    }
+    return(
+      <button className={classname} onClick={() => catchPokemon(hyperballValue)}>Catch with Hyperball <br /> {`(${hyperballsLeft} balls left)`} </button>
+      )
+  }
+
+  function Masterball(){
+    let classname = "";
+    if(masterballsLeft>0){
+      classname = "masterball";
+    }
+    return(
+      <button className={classname} onClick={() => catchPokemon(masterBallValue)}>Catch with Masterball <br /> {`(${masterballsLeft} balls left)`} </button>
+    )
+  }
+
   return (
       <div>
         <button className="button-4" role="button" onClick={() => spawnPokemon()}> Spawn Pokemon </button>
@@ -177,10 +217,10 @@ const App = () => {
           <CallPokemonRender spawnPokemon={currentPokemon}></CallPokemonRender>
         </div>
         <div>
-          <button className="pokeball" onClick={() => catchPokemon(pokeballValue)}>Catch with Pokeball <br /> {`(${pokeballsLeft} balls left)`} </button>
-          <button className="superball" onClick={() => catchPokemon(superballValue)}>Catch with Superball <br /> {`(${superballsLeft} balls left)`} </button>
-          <button className="hyperball" onClick={() => catchPokemon(hyperballValue)}>Catch with Hyperball <br /> {`(${hyperballsLeft} balls left)`} </button>
-          <button className="masterball" onClick={() => catchPokemon(masterBallValue)}>Catch with Masterball <br /> {`(${masterballsLeft} balls left)`} </button>
+         <Pokeball></Pokeball>
+         <Superball></Superball>
+         <Hyperball></Hyperball>
+         <Masterball></Masterball>
         </div>
         <div className="catched">
           <h1>Catched Pokemon</h1>
