@@ -212,7 +212,10 @@ const App = () => {
 
   return (
       <div>
-        <button className="button-4" role="button" onClick={() => spawnPokemon()}> Spawn Pokemon </button>
+        <div>
+          <h1 className="header">Pokemon Catcher</h1>
+          <button className="button-4" role="button" onClick={() => spawnPokemon()}> Spawn Pokemon </button>
+        </div>
         <div className="all-container">
           <CallPokemonRender spawnPokemon={currentPokemon}></CallPokemonRender>
         </div>

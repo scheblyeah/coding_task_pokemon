@@ -6,6 +6,13 @@ body {
   margin:20px;
 }
 
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* copied from https://getcssscan.com/css-buttons-examples */
 Button {
   margin: 20px;
