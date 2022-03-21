@@ -213,9 +213,9 @@ const App = () => {
       <div>
         <div>
           <h1 className="header">Pokemon Catcher</h1>
-          <button className="button-4" role="button" onClick={() => spawnPokemon()}> Spawn Pokemon </button>
+          <button onClick={() => spawnPokemon()}> Spawn Pokemon </button>
         </div>
-        <div className="all-container">
+        <div>
           <CallPokemonRender spawnPokemon={currentPokemon}></CallPokemonRender>
         </div>
         <div>
