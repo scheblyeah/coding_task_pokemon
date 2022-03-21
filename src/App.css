@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+body {
+  background-color: #F4F4F4;
 }
 
-.App-header {
-  background-color: white;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: left;
-  font-size: calc(5px + 2vmin);
+.catched {
+  margin:20px;
+}
+
+/* copied from https://getcssscan.com/css-buttons-examples */
+Button {
+  margin: 20px;
+  appearance: none;
+  background-color: #c9c9c9;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292E;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 12px 20px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+ .pokeball {
+   background: rgb(238,21,21);
+   color: black;
+ }
+
+.superball {
+  background: rgb(59,130,196);
   color: black;
 }
 
-button {
-  margin: 30px;
-  font-size: 18px;
-  height: 65px;
-  width: 250px;
-  border-radius: 10px;
-  border: none;
-  box-shadow: 1px 1px 0px 2px rgba (0,0,0,0.3);
-  background:red;
-   cursor: pointer;
- }
+.hyperball {
+  background: rgb(253,210,60);
+  color: black;
+}
+
+.masterball {
+  background: rgb(126,48,142);
+  color: black;
+}
 
 thead {color:black;}
 tbody {color:black;}
-tfoot {color:red;}
 
 table, th, td {
   border: 2px solid red;
-  background: white
+  background: white;
 }
 td, th{
   padding: 10px;
+}
+
+ /* below style sheets are copied from https://github.com/Siphiwo/react-pokemon-codex/blob/master/src/App.js */
+ .thumb-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0 ;
+  margin: 0.3rem;
+  border: 1px solid #efefef;
+  border-radius: 0.2rem;
+  min-width: 160px;
+  text-align: center;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.089);
+}
+
+.rock {
+  background-color: rgb(148, 81, 81);
+}
+.ghost {
+  background-color: rgb(247, 247, 247);
+}
+.electric {
+  background-color: rgb(255, 255, 161);
+}
+.bug {
+  background-color: #F6D6A7;
+}
+.poison {
+  background-color: #e0a7f6;
+}
+.normal {
+  background-color: #F4F4F4;
+}
+.fairy {
+  background-color: rgba(255, 192, 203, 0.863);
+}
+.fire {
+  background-color: #FBE3DF;
+}
+.grass {
+  background-color:#E2F9E1;
+}
+.water {
+  background-color:#E0F1FD;
 }
