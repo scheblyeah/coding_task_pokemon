@@ -129,7 +129,7 @@ const App = () => {
     }
     else{
       return (
-        <h1>Loading... (If this takes longer than a second, there might be an API connection error!</h1>
+        <h1>Loading... <br /> (If this takes longer than a second, there might be an API connection error!</h1>
       );
     }
   }
@@ -148,28 +148,27 @@ const App = () => {
           <th> Special-Attack </th>
           <th> Special-Defense </th>
           <th> Speed </th>
-
         </tr>
       </thead>
       <tbody>
           {allCatchedPokemons.map((pokemonStats, index) =>
           <tr key={pokemonStats.id} >
-          <td key={pokemonStats.id} className={pokemonStats.type}> {pokemonStats.name} </td>
-          <td key={pokemonStats.id + 1000}> {pokemonStats.id} </td>
-          <td key={pokemonStats.id + 2000}> {pokemonStats.types[0].type.name} </td>
-          <td key={pokemonStats.id + 3000}> {pokemonStats.stats[0].base_stat} </td>
-          <td key={pokemonStats.id + 4000}> {pokemonStats.stats[1].base_stat} </td>
-          <td key={pokemonStats.id + 5000}> {pokemonStats.stats[2].base_stat} </td>
-          <td key={pokemonStats.id + 6000}> {pokemonStats.stats[3].base_stat} </td>
-          <td key={pokemonStats.id + 7000}> {pokemonStats.stats[4].base_stat} </td>
-          <td key={pokemonStats.id + 8000}> {pokemonStats.stats[5].base_stat} </td>
-
+            <td key={pokemonStats.id} className={pokemonStats.type}> {pokemonStats.name} </td>
+            <td key={pokemonStats.id + 1000}> {pokemonStats.id} </td>
+            <td key={pokemonStats.id + 2000}> {pokemonStats.types[0].type.name} </td>
+            <td key={pokemonStats.id + 3000}> {pokemonStats.stats[0].base_stat} </td>
+            <td key={pokemonStats.id + 4000}> {pokemonStats.stats[1].base_stat} </td>
+            <td key={pokemonStats.id + 5000}> {pokemonStats.stats[2].base_stat} </td>
+            <td key={pokemonStats.id + 6000}> {pokemonStats.stats[3].base_stat} </td>
+            <td key={pokemonStats.id + 7000}> {pokemonStats.stats[4].base_stat} </td>
+            <td key={pokemonStats.id + 8000}> {pokemonStats.stats[5].base_stat} </td>
           </tr> )}
         </tbody>
       </table>
     );
   }
 
+  /** Printing the Ball buttons grey if the limit is reached */
   function Pokeball(){
     let classname = "";
     if(pokeballsLeft>0){

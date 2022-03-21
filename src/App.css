@@ -11,6 +11,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin:0px;
 }
 
 /* copied from https://getcssscan.com/css-buttons-examples */
